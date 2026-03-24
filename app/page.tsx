@@ -14,7 +14,7 @@ export default function CalorieApp() {
   const [foods, setFoods] = useState<Food[]>([]);
   const [selected, setSelected] = useState<(Food & { grams: number })[]>([]);
 
-  // ✅ FULL CLEAN DATASET (105 foods)
+  // ✅ FULL CLEAN DATASET (200 foods)
   const data: Food[] = [
     /* ===== PART 1 ===== */
 { name: "Rajmah Brown", protein: 19.5, fat: 1.68, carbs: 48.83 },
@@ -76,54 +76,7 @@ export default function CalorieApp() {
 { name: "Tamarind Leaves Tender", protein: 5.84, fat: 0.49, carbs: 10.04 },
 
 { name: "Almond", protein: 18.41, fat: 58.49, carbs: 3.04 },
-{ name: "Arecanut Dried Brown", protein: 5.78, fat: 4.35, carbs: 70.42 } 
-
-// ===== PART 2 =====
-{ name: "Arecanut Dried Red Color", protein: 6.46, fat: 4.46, carbs: 70.27 },
-{ name: "Arecanut Fresh", protein: 2.73, fat: 5.51, carbs: 45 },
-
-{ name: "Cashew Nut", protein: 18.78, fat: 45.2, carbs: 25.46 },
-{ name: "Coconut Kernel Dry", protein: 7.27, fat: 63.26, carbs: 8.01 },
-{ name: "Coconut Kernel Fresh", protein: 3.84, fat: 41.38, carbs: 6.3 },
-
-{ name: "Garden Cress Seeds", protein: 23.36, fat: 23.74, carbs: 33.66 },
-
-{ name: "Gingelly Seeds Black", protein: 19.17, fat: 43.1, carbs: 10.29 },
-{ name: "Gingelly Seeds Brown", protein: 21.61, fat: 43.22, carbs: 9.76 },
-{ name: "Gingelly Seeds White", protein: 21.7, fat: 43.05, carbs: 10.83 },
-
-{ name: "Groundnut", protein: 23.65, fat: 39.63, carbs: 17.27 },
-
-{ name: "Mustard Seeds", protein: 19.51, fat: 40.19, carbs: 16.8 },
-{ name: "Linseeds", protein: 18.55, fat: 35.67, carbs: 10.99 },
-
-{ name: "Niger Seeds Black", protein: 18.92, fat: 38.61, carbs: 22.98 },
-{ name: "Niger Seeds Gray", protein: 18.34, fat: 39.53, carbs: 20.59 },
-
-{ name: "Pine Seed", protein: 12.55, fat: 48.79, carbs: 26.77 },
-{ name: "Pistachio Nuts", protein: 23.35, fat: 42.49, carbs: 15.82 },
-
-{ name: "Safflower Seeds", protein: 17.66, fat: 30.87, carbs: 30.18 },
-{ name: "Sunflower Seeds", protein: 23.53, fat: 51.85, carbs: 6.85 },
-{ name: "Walnut", protein: 14.92, fat: 64.27, carbs: 10.14 },
-
-{ name: "Amul Protein Buttermilk", protein: 15, fat: 1, carbs: 8 },
-{ name: "Paneer", protein: 23, fat: 11, carbs: 3 },
-
-{ name: "Sunflower Oil", protein: 0, fat: 91, carbs: 0 },
-
-{ name: "Ash Gourd", protein: 0.79, fat: 0.14, carbs: 2.84 },
-{ name: "Bamboo Shoot Tender", protein: 1.33, fat: 0.35, carbs: 1.67 },
-
-{ name: "Bean Scarlet Tender", protein: 2.86, fat: 0.99, carbs: 5.16 },
-
-{ name: "Bitter Gourd Jagged Long", protein: 1.44, fat: 0.24, carbs: 2.82 },
-{ name: "Bitter Gourd Jagged Short", protein: 1.34, fat: 0.24, carbs: 2.53 },
-{ name: "Bitter Gourd Smooth Long", protein: 1.61, fat: 0.26, carbs: 2.29 },
-
-{ name: "Bottle Gourd Elongate Pale Green", protein: 0.53, fat: 0.13, carbs: 1.68 },
-{ name: "Bottle Gourd Round Pale Green", protein: 0.42, fat: 0.12, carbs: 2.53 },
-{ name: "Bottle Gourd Elongate Dark Green", protein: 0.49, fat: 0.13, carbs: 2.25 },
+{ name: "Arecanut Dried Brown", protein: 5.78, fat: 4.35, carbs: 70.42 }, 
 
 /* ===== PART 2 ===== */
 { name: "Arecanut Dried Red Color", protein: 6.46, fat: 4.46, carbs: 70.27 },
@@ -183,7 +136,7 @@ export default function CalorieApp() {
 { name: "Brinjal 9", protein: 1.47, fat: 0.35, carbs: 3.52 },
 { name: "Brinjal 10", protein: 1.68, fat: 0.25, carbs: 4.08 },
 { name: "Brinjal 11", protein: 1.43, fat: 0.31, carbs: 3.53 },
-{ name: "Brinjal 12", protein: 1.6, fat: 0.27, carbs: 2.73 }
+{ name: "Brinjal 12", protein: 1.6, fat: 0.27, carbs: 2.73 },
 
 /* ===== PART 3 ===== */
 { name: "Brinjal 13", protein: 1.49, fat: 0.31, carbs: 4.51 },
@@ -293,7 +246,6 @@ export default function CalorieApp() {
 { name: "Curd", protein: 3.3, fat: 3, carbs: 4.3 },
 { name: "Idli", protein: 7.6, fat: 0.66, carbs: 41.6 },
 { name: "Oats", protein: 13, fat: 10, carbs: 65 }
-];
 
 ];
 
