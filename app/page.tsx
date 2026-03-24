@@ -287,6 +287,8 @@ export default function CalorieApp() {
 
 { name: "Amul Whey Protein", protein: 78, fat: 5, carbs: 10.8 },
 { name: "Curd", protein: 3.3, fat: 3, carbs: 4.3 },
+{ name: "soya chunks", protein: 53.19, fat: 0.89, carbs: 33.5 },
+{ name: "milk", protein: 3.1, fat: 3, carbs: 4.6 },
 { name: "Idli", protein: 7.6, fat: 0.66, carbs: 41.6 },
 { name: "Oats", protein: 13, fat: 10, carbs: 65 }
 
